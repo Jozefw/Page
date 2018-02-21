@@ -1,0 +1,96 @@
+.video-section{
+    position: relative;
+    &__header{
+        color: $color-green;
+        font-size: 4rem;
+        text-align: center;
+        margin: 3rem 0 8rem 0;
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
+        @include respond(sm-phone){
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__image{
+       text-align: center;
+        &:before{
+            content:""; 
+            display: inline-block;
+            background-image: url('../img/icons/left-caret.svg');
+            background-repeat: no-repeat;
+            height: 3.3rem;
+            width: 3.3rem;
+            top: -17.5rem;
+            left: -2rem;
+            position: relative;
+            @include respond(phone){
+                top: -3rem;
+            }
+            @include respond(sm-phone){
+                top: -3rem;
+            }
+        }
+        &:after{
+            content:""; 
+            display: inline-block;
+            background-image: url('../img/icons/right-caret.svg');
+            background-repeat: no-repeat;
+            height: 3.3rem;
+            width: 3.3rem;
+            top: -17.5rem;
+            left: 2.5rem;
+            position: relative;
+            @include respond(phone){
+                top: -3rem;
+            }
+            @include respond(sm-phone){
+                top: -3rem;
+            }
+          }
+          svg{
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              @include respond(phone){
+                height: 3rem;
+                top: 45%;
+            }
+              @include respond(sm-phone){
+                height: 3rem;
+                top: 45%;
+            }
+          }
+    }
+    img{
+        width: 50%;
+    }
+    &__copy{
+        text-align: center;
+        color: $color-secondary;
+        margin: 2rem 0rem;
+        font-size: 1.3rem;
+        @include respond(phone){
+            margin: 2rem 1rem;
+        }
+        @include respond(sm-phone){
+            margin: 2rem 1rem;
+        }
+    }
+    &__testemonial-label{
+        text-align: center;
+        @include respond(phone){
+            margin: 2rem 1rem;
+        }
+    }
+    &__testemonial-name{
+        color: $color-label;
+        font-size: 1.6rem;
+    }
+    &__testemonial-copy{
+        color: $color-blue-btn;
+        font-size: 1.3rem;
+    }
+}

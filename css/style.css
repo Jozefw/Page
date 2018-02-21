@@ -1,0 +1,546 @@
+/*
+breakpoint ranges
+0 - 320 px small phone
+320 - 600 px Phone 
+600 - 900 px Tablet Portrait 
+900 - 1200 px Tablet Landscape
+[1200px -1800px] current styles in place
+> 1800 px +   Big Desktop  
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 65.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto; }
+
+.btn-blue {
+  background-color: #00adda;
+  color: #fff;
+  padding: 1.5rem 5rem;
+  border-radius: 5px;
+  border: none; }
+
+.header {
+  background-image: url("../img/background/rooftop_blue_background.png");
+  background-size: cover;
+  background-position: top center;
+  height: 60rem;
+  background-repeat: no-repeat;
+  position: relative; }
+  .header__wrapper {
+    padding-top: 3.5rem;
+    padding-left: 12.5rem; }
+    .header__wrapper::after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media (max-width: 37.5em) {
+      .header__wrapper {
+        width: 100%;
+        padding-top: 0rem;
+        padding-left: 0rem;
+        padding: 1.5rem;
+        text-align: center; } }
+    @media (max-width: 20em) {
+      .header__wrapper {
+        padding: 1rem;
+        text-align: center; } }
+  .header__copy {
+    width: 50%;
+    float: left; }
+    @media (max-width: 37.5em) {
+      .header__copy {
+        width: 100%;
+        margin-top: 4rem; } }
+    @media (max-width: 20em) {
+      .header__copy {
+        width: 100%;
+        margin-top: 4rem; } }
+  .header__copy-heading {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 100; }
+    @media (max-width: 20em) {
+      .header__copy-heading {
+        color: #f59131;
+        text-shadow: 0.1rem 0.1rem 0.1rem #5d5f63;
+        margin-bottom: 5rem; } }
+    .header__copy-heading--bold {
+      font-weight: bold; }
+  .header__copy-text {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    @media (max-width: 20em) {
+      .header__copy-text {
+        font-weight: bold;
+        text-shadow: .1rem .1rem .1rem #000;
+        font-size: 2rem;
+        margin-bottom: 0rem; } }
+  .header .btn-learn {
+    color: #fff;
+    padding: 1.2rem 1.75rem;
+    background-color: #f59131;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2rem; }
+    @media (max-width: 37.5em) {
+      .header .btn-learn {
+        margin-top: 5rem;
+        margin-bottom: 10rem; } }
+    @media (max-width: 20em) {
+      .header .btn-learn {
+        margin-bottom: 5rem;
+        margin-top: 3rem; } }
+  .header__box-links {
+    width: 50%;
+    float: left; }
+    @media (max-width: 37.5em) {
+      .header__box-links {
+        width: 100%;
+        margin-top: 8rem;
+        margin-bottom: 5rem; } }
+    @media (max-width: 20em) {
+      .header__box-links {
+        width: 100%;
+        margin-bottom: 5rem; } }
+    .header__box-links--orange {
+      height: 11rem;
+      width: 23rem;
+      background-color: #f59131;
+      margin: 0 auto;
+      position: relative;
+      display: block; }
+      .header__box-links--orange::after {
+        content: "";
+        display: table;
+        clear: both; }
+      @media (max-width: 37.5em) {
+        .header__box-links--orange {
+          text-align: left; } }
+      @media (max-width: 20em) {
+        .header__box-links--orange {
+          text-align: left; } }
+      .header__box-links--orange-copy {
+        display: inline-block;
+        padding: 1.2rem;
+        color: #fff; }
+      .header__box-links--orange-copy-header {
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+        letter-spacing: .1rem; }
+      .header__box-links--orange-copy-text {
+        font-size: 1.1rem; }
+      .header__box-links--orange svg {
+        float: right;
+        position: absolute;
+        height: 4rem;
+        top: 3.8rem;
+        left: 14rem; }
+    .header__box-links--green {
+      height: 11rem;
+      width: 23rem;
+      background-color: #39a154;
+      margin: 0 auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: block; }
+      .header__box-links--green::after {
+        content: "";
+        display: table;
+        clear: both; }
+      @media (max-width: 37.5em) {
+        .header__box-links--green {
+          text-align: left; } }
+      @media (max-width: 20em) {
+        .header__box-links--green {
+          text-align: left; } }
+      .header__box-links--green-copy {
+        display: inline-block;
+        padding: 1.2rem;
+        color: #fff; }
+      .header__box-links--green-copy-header {
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+        letter-spacing: .1rem; }
+      .header__box-links--green-copy-text {
+        font-size: 1.1rem; }
+      .header__box-links--green svg {
+        float: right;
+        position: absolute;
+        height: 4.7rem;
+        top: 3rem;
+        left: 15rem; }
+    .header__box-links--blue {
+      height: 11rem;
+      width: 23rem;
+      background-color: #005181;
+      margin: 0 auto;
+      position: relative;
+      display: block; }
+      .header__box-links--blue::after {
+        content: "";
+        display: table;
+        clear: both; }
+      @media (max-width: 37.5em) {
+        .header__box-links--blue {
+          text-align: left; } }
+      @media (max-width: 20em) {
+        .header__box-links--blue {
+          text-align: left; } }
+      .header__box-links--blue-copy {
+        display: inline-block;
+        padding: 1.2rem;
+        color: #fff; }
+      .header__box-links--blue-copy-header {
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+        letter-spacing: .1rem; }
+      .header__box-links--blue-copy-text {
+        font-size: 1.1rem; }
+      .header__box-links--blue svg {
+        float: right;
+        position: absolute;
+        height: 4.7rem;
+        top: 3rem;
+        left: 15rem; }
+
+.digital-mortgage {
+  position: relative; }
+  .digital-mortgage__wrapper {
+    margin-top: 8rem;
+    text-align: center; }
+  .digital-mortgage__wrapper-header {
+    color: #39a154;
+    font-size: 2.5rem; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage__wrapper-header {
+        padding: 0rem 1rem; } }
+    @media (max-width: 20em) {
+      .digital-mortgage__wrapper-header {
+        padding: 0rem 1rem; } }
+  .digital-mortgage__wrapper-text {
+    margin-top: 2rem;
+    color: #5d5f63;
+    line-height: 2;
+    font-size: 1.3rem; }
+    @media (max-width: 65.25em) {
+      .digital-mortgage__wrapper-text {
+        padding: 0 3rem; } }
+  .digital-mortgage__icon-wrapper {
+    border: 1px solid rgba(93, 95, 99, 0.5);
+    margin: 3rem 17rem;
+    border-radius: 3px; }
+    @media (max-width: 65.25em) {
+      .digital-mortgage__icon-wrapper {
+        margin: 3rem 3rem; } }
+    @media (max-width: 37.5em) {
+      .digital-mortgage__icon-wrapper {
+        margin: 3rem 5.5rem; } }
+    @media (max-width: 20em) {
+      .digital-mortgage__icon-wrapper {
+        margin: 3rem 5.5rem; } }
+  .digital-mortgage__icon-wrapper--label {
+    color: #0068a9;
+    text-align: center;
+    font-size: 1.2rem; }
+  .digital-mortgage__icon-wrapper--icon {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    @media (max-width: 20em) {
+      .digital-mortgage__icon-wrapper--icon {
+        margin: 2rem 5.5rem; } }
+  .digital-mortgage .sales-icon {
+    display: inline-block;
+    padding-left: 3rem;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .sales-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .sales-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .house-icon {
+    display: inline-block;
+    top: -2rem;
+    position: relative;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .house-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .house-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .processing-icon {
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .processing-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .processing-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .eclosing-icon {
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .eclosing-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .eclosing-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .reporting-icon {
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 65.25em) {
+      .digital-mortgage .reporting-icon {
+        padding-left: 0rem; } }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .reporting-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .reporting-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .compliance-icon {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+    left: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff; }
+    @media (max-width: 65.25em) {
+      .digital-mortgage .compliance-icon {
+        margin: 0rem auto; } }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .compliance-icon {
+        margin: 0rem auto;
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .compliance-icon {
+        padding-left: 1rem;
+        padding-top: 2rem; } }
+  .digital-mortgage .right-arrow-icon {
+    display: inline-block;
+    position: relative;
+    top: -5rem;
+    padding: 0 1.5rem; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .right-arrow-icon {
+        padding: 4rem 4rem 0 4rem;
+        display: block;
+        text-align: center; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .right-arrow-icon {
+        padding: 4rem 4rem 0 4rem;
+        display: block; } }
+  .digital-mortgage .pos-icon {
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .digital-mortgage .pos-icon {
+        padding-left: 0;
+        display: block; } }
+    @media (max-width: 20em) {
+      .digital-mortgage .pos-icon {
+        padding: 0;
+        display: block; } }
+  .digital-mortgage .btn-learn {
+    margin: 3rem auto 6rem auto;
+    display: block; }
+
+.encompass-lending {
+  background-image: url("../img/background/encompass-ng-background.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .encompass-lending__wrapper-ghost {
+    width: 49%;
+    display: inline-block; }
+  .encompass-lending__wrapper {
+    width: 49%;
+    display: inline-block; }
+    @media (max-width: 37.5em) {
+      .encompass-lending__wrapper {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center; } }
+    @media (max-width: 20em) {
+      .encompass-lending__wrapper {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center; } }
+  .encompass-lending__header {
+    color: #fff;
+    font-size: 4rem;
+    margin: 2rem 0 0rem 0;
+    line-height: 1.1; }
+  .encompass-lending__header-bold {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold; }
+  .encompass-lending__copy {
+    color: #fff;
+    margin: 2rem 0 0rem 0;
+    font-size: 1.3rem; }
+  .encompass-lending .btn-solution {
+    margin: 3rem 0 8rem 0; }
+
+.video-section {
+  position: relative; }
+  .video-section__header {
+    color: #39a154;
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0 8rem 0; }
+    @media (max-width: 37.5em) {
+      .video-section__header {
+        margin-bottom: 3rem; } }
+    @media (max-width: 20em) {
+      .video-section__header {
+        margin-bottom: 3rem; } }
+  .video-section__image {
+    text-align: center; }
+    .video-section__image:before {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/icons/left-caret.svg");
+      background-repeat: no-repeat;
+      height: 3.3rem;
+      width: 3.3rem;
+      top: -17.5rem;
+      left: -2rem;
+      position: relative; }
+      @media (max-width: 37.5em) {
+        .video-section__image:before {
+          top: -3rem; } }
+      @media (max-width: 20em) {
+        .video-section__image:before {
+          top: -3rem; } }
+    .video-section__image:after {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/icons/right-caret.svg");
+      background-repeat: no-repeat;
+      height: 3.3rem;
+      width: 3.3rem;
+      top: -17.5rem;
+      left: 2.5rem;
+      position: relative; }
+      @media (max-width: 37.5em) {
+        .video-section__image:after {
+          top: -3rem; } }
+      @media (max-width: 20em) {
+        .video-section__image:after {
+          top: -3rem; } }
+    .video-section__image svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      @media (max-width: 37.5em) {
+        .video-section__image svg {
+          height: 3rem;
+          top: 45%; } }
+      @media (max-width: 20em) {
+        .video-section__image svg {
+          height: 3rem;
+          top: 45%; } }
+  .video-section img {
+    width: 50%; }
+  .video-section__copy {
+    text-align: center;
+    color: #5d5f63;
+    margin: 2rem 0rem;
+    font-size: 1.3rem; }
+    @media (max-width: 37.5em) {
+      .video-section__copy {
+        margin: 2rem 1rem; } }
+    @media (max-width: 20em) {
+      .video-section__copy {
+        margin: 2rem 1rem; } }
+  .video-section__testemonial-label {
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .video-section__testemonial-label {
+        margin: 2rem 1rem; } }
+  .video-section__testemonial-name {
+    color: #0068a9;
+    font-size: 1.6rem; }
+  .video-section__testemonial-copy {
+    color: #00adda;
+    font-size: 1.3rem; }
+
+.footer {
+  background-color: #005181;
+  margin-top: 6rem;
+  position: relative; }
+  .footer__wrapper {
+    text-align: center; }
+  .footer__header {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 3rem; }
+  .footer .btn__demo {
+    background-color: #f59131;
+    color: #fff;
+    padding: 1.5rem 5rem;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .footer .btn__demo {
+        margin-bottom: 2.5rem; } }
+    @media (max-width: 20em) {
+      .footer .btn__demo {
+        margin-bottom: 2.5rem; } }

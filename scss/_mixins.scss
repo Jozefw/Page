@@ -1,0 +1,49 @@
+
+// ******** Clearfix *********
+@mixin clearfix {
+    &::after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+ }
+
+//  ******* Inner Wrapper spacing ********
+ @mixin wrapper{
+    padding-top: 3.5rem;
+    padding-left: 12.5rem;
+ }
+
+//  ******* Media Query Manager ******
+
+/*
+breakpoint ranges
+0 - 320 px small phone
+320 - 600 px Phone 
+600 - 900 px Tablet Portrait 
+900 - 1200 px Tablet Landscape
+[1200px -1800px] current styles in place
+> 1800 px +   Big Desktop  
+
+*/
+
+// Break Point Arguement Choices
+
+// convert px to em's: 1em = 16px 600/16 = 37.5em:
+@mixin respond($breakpoint){
+    @if $breakpoint == sm-phone{
+        @media (max-width: 20em){@content};
+    }
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em){@content}; 
+    }
+    @if $breakpoint == tablet-port {
+        @media(max-width: 65.25em){@content}; 
+    }
+    @if $breakpoint == tablet-land {
+        @media(max-width: 75em){@content}; 
+    }
+    @if $breakpoint == big-desk {
+        @media(min-width: 112.5em){@content};  
+    }
+}

@@ -1,0 +1,44 @@
+.encompass-lending{
+    background-image: url('../img/background/encompass-ng-background.png');
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    &__wrapper-ghost{
+        width: 49%;
+        display: inline-block;
+    }
+    &__wrapper{
+        width: 49%;
+        display: inline-block;
+        @include respond(phone){
+            width: 100%;
+            padding: 0 1rem;
+            text-align: center;
+        } 
+        @include respond(sm-phone){
+            width: 100%;
+            padding: 0 1rem;
+            text-align: center;
+        }
+    }
+    &__header{
+        color: $color-primary;
+        font-size: 4rem;
+        margin: 2rem 0 0rem 0;
+        line-height: 1.1;
+    }
+    &__header-bold{
+        color: $color-primary;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    &__copy{
+        color: $color-primary;
+        margin: 2rem 0 0rem 0;
+        font-size: 1.3rem;
+    }
+    .btn-solution{
+        margin: 3rem 0 8rem 0;
+    }
+}

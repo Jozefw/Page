@@ -1,0 +1,29 @@
+.footer{
+    background-color: $color-blue;
+    margin-top: 6rem;
+    position: relative;
+    &__wrapper{
+      text-align: center;
+    }
+    &__header{
+        text-align: center;
+        color:$color-primary;
+        display: inline-block;
+        margin: 3rem;
+    }
+    .btn__demo{
+        background-color: $color-orange;
+        color: $color-primary;
+        padding: 1.5rem 5rem;
+        border-radius: 5px;
+        border:none;
+        display: inline-block;
+        text-align: center;
+        @include respond(phone){
+            margin-bottom: 2.5rem;
+        }
+        @include respond(sm-phone){
+            margin-bottom: 2.5rem;
+        }
+    }
+}

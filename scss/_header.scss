@@ -1,0 +1,206 @@
+.header{
+    background-image: url('../img/background/rooftop_blue_background.png');
+    background-size: cover;
+    background-position: top center;
+    height: 60rem;
+    background-repeat: no-repeat;
+    position: relative;
+    &__wrapper{
+        @include wrapper;
+        @include clearfix;
+        @include respond(phone){
+            width: 100%;
+            padding-top: 0rem;
+            padding-left: 0rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        @include respond(sm-phone){
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+    &__copy{
+       width: 50%;
+       float: left;
+       @include respond(phone){
+        width: 100%;
+        margin-top: 4rem;
+    }
+       @include respond(sm-phone){
+           width: 100%;
+           margin-top: 4rem;
+       }
+
+    }
+
+    &__copy-heading{
+        font-size: 4rem;
+        color: $color-primary;
+        font-weight: 100;
+        @include respond(sm-phone){
+            color: $color-orange;
+            text-shadow: .1rem .1rem .1rem $color-secondary;
+            margin-bottom: 5rem;
+        }
+        &--bold {
+             font-weight: bold;
+         }   
+    }
+
+    &__copy-text{
+        color: $color-primary;
+        font-size: 1.25rem;
+        font-weight: 200;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include respond(sm-phone){
+            font-weight: bold;
+            text-shadow: .1rem .1rem .1rem #000;
+            font-size: 2rem;
+            margin-bottom: 0rem;
+        }
+    }
+    .btn-learn{
+        color: $color-primary;
+        padding: 1.2rem 1.75rem;
+        background-color: $color-orange;
+        border:none;
+        border-radius: 2px;
+        margin-top: 2rem;
+        @include respond (phone){
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+        }
+        @include respond(sm-phone){
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+        }
+    }
+
+    &__box-links{
+        width: 50%;
+        float: left;
+        @include respond(phone){
+            width: 100%;
+            margin-top: 8rem;
+            margin-bottom: 5rem;
+        }
+        @include respond(sm-phone){
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        &--orange{
+            height: $box-height;
+            width: $box-width;
+            background-color: $color-orange;
+            margin: 0 auto;
+            position: relative;
+            @include clearfix;
+            display: block;
+            @include respond(phone){
+                text-align: left;
+            }
+            @include respond(sm-phone){
+                text-align: left;
+            }
+
+            
+            &-copy{
+                display: inline-block;
+                padding: 1.2rem;
+                color:$color-primary; 
+            }
+            &-copy-header{
+                font-weight: 300;
+                font-size: 1.6rem;
+                padding-bottom: .5rem;
+                letter-spacing: .1rem;
+            }
+            &-copy-text{
+                font-size: 1.1rem;
+            }
+            svg{
+                float:right;
+                position: absolute;
+                height: 4rem;
+                top: 3.8rem;
+                left: 14rem;
+            }
+        }
+        &--green{
+            height: $box-height;
+            width: $box-width;
+            background-color: $color-green;
+            margin: 0 auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            @include clearfix;
+            display: block;
+            @include respond(phone){
+                text-align: left;
+            }
+            @include respond(sm-phone){
+                text-align: left;
+            }
+            &-copy{
+                display: inline-block;
+                padding: 1.2rem;
+                color:$color-primary; 
+            }
+            &-copy-header{
+                font-weight: 300;
+                font-size: 1.6rem;
+                padding-bottom: .5rem;
+                letter-spacing: .1rem;
+            }
+            &-copy-text{
+                font-size: 1.1rem;
+            }
+            svg{
+                float:right;
+                position: absolute;
+                height: 4.7rem;
+                top: 3rem;
+                left: 15rem;
+            }
+        }
+        &--blue{
+            height: $box-height;
+            width: $box-width;
+            background-color: $color-blue;
+            margin: 0 auto;
+            position: relative;
+            @include clearfix;
+            display: block;
+            @include respond(phone){
+                text-align: left;
+            }
+            @include respond(sm-phone){
+                text-align: left;
+            }
+            &-copy{
+                display: inline-block;
+                padding: 1.2rem;
+                color:$color-primary; 
+            }
+            &-copy-header{
+                font-weight: 300;
+                font-size: 1.6rem;
+                padding-bottom: .5rem;
+                letter-spacing: .1rem;
+            }
+            &-copy-text{
+                font-size: 1.1rem;
+            }
+            svg{
+                float:right;
+                position: absolute;
+                height: 4.7rem;
+                top: 3rem;
+                left: 15rem;
+            }
+        }
+    }
+}

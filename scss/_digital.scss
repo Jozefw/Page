@@ -1,0 +1,177 @@
+.digital-mortgage{
+    position: relative;
+    &__wrapper{
+        margin-top: 8rem;
+        text-align: center;
+    }
+    &__wrapper-header{
+        color: $color-green;
+        font-size: 2.5rem;
+        @include respond(phone){
+            padding: 0rem 1rem;
+        }
+        @include respond(sm-phone){
+            padding: 0rem 1rem;
+        }
+    }
+    &__wrapper-text{
+        margin-top:2rem;
+        color: $color-secondary;
+        line-height: 2;
+        font-size: 1.3rem;
+       
+        @include respond(tablet-port){
+           padding: 0 3rem;
+        }
+    }
+    &__icon-wrapper{
+        border: 1px solid rgba($color-secondary,.5);
+        margin:3rem 17rem;
+        border-radius: 3px;
+        @include respond(tablet-port){
+            margin:3rem 3rem;
+        }
+        @include respond(phone){
+            margin:3rem 5.5rem;
+        }
+        @include respond(sm-phone){
+            margin:3rem 5.5rem;
+        }
+    }
+    &__icon-wrapper--label{
+        color: $color-label;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    &__icon-wrapper--icon{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include respond(sm-phone){
+            margin: 2rem 5.5rem;
+        }
+    }
+    .sales-icon{
+        display: inline-block;
+        padding-left: 3rem;
+        text-align: center;
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+    
+        }
+    }
+    .house-icon{
+        display: inline-block;
+        top: -2rem;
+        position: relative;
+        text-align: center;
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+        }
+    }
+    .processing-icon{
+        display: inline-block;
+        text-align: center;
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+        }
+    }
+    .eclosing-icon{
+        display: inline-block;
+        text-align: center;
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+        }
+    }
+    .reporting-icon{
+        display: inline-block;
+        text-align: center;
+        @include respond(tablet-port){
+            padding-left: 0rem;
+        }
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+        }
+    }
+    .compliance-icon{
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        top: -1rem;
+        left: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: $color-primary;
+        @include respond(tablet-port){
+            margin: 0rem auto;
+        }
+        @include respond(phone){
+            margin: 0rem auto;
+            position: relative;
+            display: block;
+            top: 0;
+            left:0;
+        }
+        @include respond(sm-phone){
+            padding-left: 1rem;
+            padding-top: 2rem;
+        }
+    }
+    .right-arrow-icon{
+        display: inline-block;
+        position: relative;
+        top: -5rem;
+        padding: 0 1.5rem;
+        @include respond(phone){
+            padding: 4rem 4rem 0 4rem;
+            display: block;
+            text-align: center;
+        }
+        @include respond(sm-phone){
+            padding: 4rem 4rem 0 4rem;
+            display: block;
+        }
+    }
+    .pos-icon{
+        display: inline-block;
+        text-align: center;
+        @include respond(phone){
+            padding-left: 0;
+            display: block;
+        }
+        @include respond(sm-phone){
+            padding: 0;
+            display: block;
+        }
+    }
+    .btn-learn{
+        margin: 3rem auto 6rem auto;
+        display: block;
+
+    }
+   
+}
